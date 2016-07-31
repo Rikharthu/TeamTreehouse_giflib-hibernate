@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .note {
+            margin: 20px;
+            border: 1px solid #ffcc99;
+            padding: 5px;
+            max-width:30%;
+            background-color: #ffff99;
+            border-radius: 6px;
+            font-family : "Comic Sans MS", cursive, sans-serif;
+            font-size: 32px;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    <div class="note">
+        <p>
+            Type 'java -cp h2-1.4.190.jar org.h2.tools.Server' in Idea Terminal to open H2 console in your browser
+        </p>
+    </div>
+    <div class="note">
+        <p>
+            jdbc:h2:tcp://localhost/D:/Storage/Workspace/Treehouse/giflib-hibernate/data/giflib
+        </p>
+    </div>
+    <div class="note">
+        <p>
+            POST requests are used to make changes on the server, whereas GET request should not make changes to the server
+        </p>
+    </div>
+    <div class="note">
+        <p>
+            Edit category.При нажатии на '...' категории, отправляется GET request на /categories/${cat.id}/edit
+            Перехватывается CategoryController'ом
+            Вызывается метод formEditCategory(). Он ловит {cat.id}, находит категорию с таким ИД и добавляет в модель.
+            Также в модел добавляются прочие вспомогательные поля такие как action(смотри categories/form.html) и возвращает view category/form,
+            Thymeleaf вставляет в поля формы параметры выбранной категории (т.к. мы добавили категорию в модель)
+            При нажатии submit отправляется POST запрос на ссылку, переданную в модель в методе formEditCategory(),
+            а именно /categories/{cat.id}
+        </p>
+    </div>
+    <div class="note">
+        <p>
+            Type 'java -cp h2-1.4.190.jar org.h2.tools.Server' in Idea Terminal to open H2 console in your browser
+        </p>
+    </div>
+    <div class="note">
+        <p>
+            Type 'java -cp h2-1.4.190.jar org.h2.tools.Server' in Idea Terminal to open H2 console in your browser
+        </p>
+    </div>
+</body>
+</html>
